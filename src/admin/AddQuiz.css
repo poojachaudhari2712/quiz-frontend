@@ -1,0 +1,114 @@
+/* AddQuiz.css - Updated for Gradient Theme Consistency */
+.add-quiz-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  background: linear-gradient(135deg, #ffffff, #f9f2f9);
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  max-height: 90vh;
+  overflow-y: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-right: 16px;
+}
+
+/* Scrollbar styling */
+.add-quiz-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.add-quiz-container::-webkit-scrollbar-thumb {
+  background-color: #e2cbe5;
+  border-radius: 4px;
+}
+
+.add-quiz-container::-webkit-scrollbar-thumb:hover {
+  background-color: #b597c9;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2d2d2d;
+}
+
+/* Inputs and Selects */
+input,
+select {
+  width: 95%;
+  padding: 10px;
+  margin: 6px 0 12px 0;
+  border: 1px solid #d6b4e6;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #fdfdff;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #c084f5;
+  box-shadow: 0 0 8px rgba(192, 132, 245, 0.5);
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #fabce3, #ebb8c9);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(251, 148, 207, 0.3);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(251, 148, 207, 0.5);
+}
+
+button[type="button"] {
+  background: linear-gradient(135deg, #c084f5, #a78bfa);
+}
+
+button[type="button"]:hover {
+  box-shadow: 0 6px 20px rgba(167, 139, 250, 0.5);
+}
+
+/* Question Container */
+.question-container {
+  border: 1px solid #e0c0f0;
+  margin: 12px 0;
+  padding: 15px;
+  border-radius: 14px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(192, 132, 245, 0.08);
+}
+
+.question-container input,
+.question-container select {
+  margin-bottom: 10px;
+  width: 40%;
+}
+
+.question-container input[type="text"],
+.question-container input[type="number"] {
+  border-radius: 8px;
+}
+
+.question-container input[type="number"] {
+  width: 40%;
+  display: inline-block;
+  margin-right: 4%;
+}
+
+.question-container button {
+  margin-top: 10px;
+}

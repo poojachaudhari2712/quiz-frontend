@@ -1,0 +1,50 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --card-bg: #f0f0f0;
+    --button-bg: #007bff;
+    --button-text: #ffffff;
+    --border-color: #cccccc;
+  }
+  
+  [data-theme='dark'] {
+    --bg-color: #121212;
+    --text-color: #f5f5f5;
+    --card-bg: #1e1e1e;
+    --button-bg: #1f6feb;
+    --button-text: #ffffff;
+    --border-color: #333333;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  .card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 16px;
+    border-radius: 8px;
+    margin: 16px 0;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  

@@ -1,0 +1,133 @@
+.student-quiz-container,
+.result-container {
+  height: 100vh;
+  background: linear-gradient(135deg, #f0f4ff, #fdeaff);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 1rem 1.5rem;
+}
+
+.student-quiz-container h2,
+.result-container h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+.timer p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2d2d2d;
+  background-color: #d8e6ff;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.quiz-section {
+  background: #ffffff;
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-box {
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+.question-box p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+ul li {
+  text-align: center;
+  margin: 0.4rem 0;
+  padding: 0.7rem;
+  background-color: #f7faff;
+  border: 1px solid #ccddee;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+}
+
+ul li:hover {
+  background-color: #e6efff;
+}
+
+ul li[selected] {
+  background-color: #4a90e2;
+  color: #fff;
+  font-weight: 600;
+}
+
+.next-button,
+.result-container button {
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: #fff;
+  padding: 0.6rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(82, 192, 245, 0.3);
+  margin-top: 1.5rem;
+  width: 20%;
+}
+
+.next-button:hover,
+.result-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(82, 192, 245, 0.4);
+}
+
+.review-section {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  margin-top: 1.5rem;
+  overflow-y: auto;
+  max-height: 60vh;
+}
+
+.review-question {
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.8rem;
+}
+
+.review-question p {
+  margin: 0.2rem 0;
+  font-size: 1rem;
+}
+
+.user-answer {
+  color: #e67e22;
+}
+
+.correct-answer {
+  color: #27ae60;
+}

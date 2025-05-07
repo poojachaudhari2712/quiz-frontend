@@ -1,0 +1,23 @@
+:root {
+  --bg-color-light: #f9f9f9; /* Light mode background */
+  --bg-color-dark: #121212; /* Dark mode background */
+  --text-color-light: #1f1f1f; /* Light mode text */
+  --text-color-dark: #f1f1f1; /* Dark mode text */
+}
+
+[data-theme="light"] {
+  --bg-color: var(--bg-color-light);
+  --text-color: var(--text-color-light);
+}
+
+[data-theme="dark"] {
+  --bg-color: var(--bg-color-dark);
+  --text-color: var(--text-color-dark);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}

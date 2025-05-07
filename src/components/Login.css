@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+}
+
+.login-theme-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.login-theme-left {
+  max-width: 500px;
+  text-align: left;
+}
+
+.login-theme-left h1 {
+  font-size: 2.8rem;
+  color: #2d3436;
+  font-weight: 700;
+}
+
+.login-theme-left h1 span {
+  color: #6c5ce7;
+}
+
+.login-theme-left p {
+  font-size: 1.2rem;
+  color: #636e72;
+  margin-top: 1rem;
+}
+
+.login-theme-right {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-theme-form h2 {
+  font-size: 2rem;
+  color: #2d3436;
+  margin-bottom: 1.5rem;
+}
+
+.login-theme-form input {
+  width: 90%;
+  padding: 0.9rem 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+.login-theme-form button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  background: linear-gradient(to right, #ef9a9a, #f06292);
+  color: white;
+  border: none;
+}
+
+.login-theme-form button:hover {
+  opacity: 0.9;
+}
+
+
+.register-text {
+  margin-top: 1rem;
+  color: #636e72;
+}
+
+.register-text a {
+  color: #6c5ce7;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,61 @@
+.edit-quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fdfbff, #eae2f8);
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.edit-quiz-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.edit-quiz-card h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #4a148c;
+}
+
+.subject-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.subject-list li {
+  margin-bottom: 1rem;
+}
+
+.subject-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #f7b9d8, #cda1b9);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.subject-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #ab47bc, #ce93d8);
+}
+
+@media (max-width: 768px) {
+  .edit-quiz-card {
+    padding: 20px;
+  }
+}

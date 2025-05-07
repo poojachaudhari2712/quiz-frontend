@@ -1,0 +1,135 @@
+/* Admin Students Container */
+.admin-students-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: auto;
+}
+
+/* Scrollbar styling */
+.admin-students-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.admin-students-container::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 4px;
+}
+
+/* Header styling */
+.admin-students-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #86288f;
+  margin-bottom: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px; /* Add space below the table */
+}
+
+/* Table Header and Data Cells */
+th, td {
+  padding: 14px 18px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 1rem; /* Increased font size for better readability */
+}
+
+th {
+  background-color: #8e3aa7;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+  background-color: #f1f5f9;
+}
+
+tr:hover {
+  background-color: #e2e6ea;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Pagination or Status Messages */
+p {
+  text-align: center;
+  color: #6c757d;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+/* Button styles for actions (Add, Edit, Delete) */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+button:active {
+  transform: scale(1); /* Reset scale when clicked */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust table layout on smaller screens */
+  .admin-students-container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  table {
+    width: 100%;
+    overflow-x: auto; /* Allow horizontal scrolling for smaller screens */
+  }
+
+  th, td {
+    font-size: 0.9rem; /* Slightly smaller font for mobile */
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.4rem; /* Smaller font on very small screens */
+  }
+
+  th, td {
+    padding: 10px; /* Decrease padding for small screens */
+    font-size: 0.85rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+    margin-top: 10px;
+  }
+}

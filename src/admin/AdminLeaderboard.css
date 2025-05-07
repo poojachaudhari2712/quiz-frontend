@@ -1,0 +1,53 @@
+.leaderboard-container {
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #4a148c;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 6px 12px; /* Smaller padding for a smaller button */
+  background-color: #ba68c8;
+  width: 100%;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 20px;
+  float: right; /* Aligns the button to the right */
+}
+
+button:hover {
+  background-color: #ab47bc;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.leaderboard-table th,
+.leaderboard-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.leaderboard-table th {
+  background-color: #4a148c;
+  color: white;
+}
+
+.leaderboard-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.leaderboard-table tr:hover {
+  background-color: #f1f1f1;
+}
